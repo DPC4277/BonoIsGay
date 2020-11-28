@@ -1,0 +1,168 @@
+<html>
+    <head>
+        <title>PMHA Official Website</title>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      body{
+        font-family: Arial;
+        padding: 10px;
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.75), rgba(200, 0, 0, 0.5)), black;
+        background-position: center;
+        background-size: cover;
+      }
+      .container{
+        border-radius: 20px;
+        background: linear-gradient(rgba(50, 0, 100, 1), rgba(200, 0, 100, 0.5), rgba(50, 0, 100, 0.5)), url(AHAA.png)no-repeat; width: 100%;
+        background-position: center;
+        background-size: cover;
+      }
+      .header{
+        padding: 30px;
+        text-align: center;
+      }
+      .header h1{
+        font-size: 50px;
+      }
+      .topnav{
+        overflow: hidden;
+      }
+      .topnav a{
+        float: left;
+        display: block;
+        border-radius: 25px;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      .topnav a:hover{
+        background-color: #ddd;
+        color: black;
+      }
+      .leftcolumn{
+        float: left;
+        width: 75%;
+      }
+      .rightcolumn{
+        float: left;
+        width: 25%;
+        background-color: rgba(0,0,0,0);
+        padding-left: 20px;
+      }
+      .fakeimg{
+        border-radius: 25px;
+        background-color: #aaa;
+        background: linear-gradient(rgba(50, 0, 100, 1), rgba(200, 0, 100, 0.5));
+        width: 100%;
+        padding: 20px;
+      }
+      .card{
+        border-radius: 25px;
+        border: 1px solid white;
+        background-color: rgba(0,0,0,0.6);
+        color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+      .card h2{
+        border-bottom: 1px solid white;
+      }
+      .row:after{
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .footer{
+        border-radius: 25px;
+        background-color: rgba(0,0,0,0.80);
+        color: white;
+        padding: 20px;
+        text-align: center;
+        margin-top: 20px;
+      }
+      @media screen and (max-width: 800px){
+        .leftcolumn, .rightcolumn{
+          width: 100%;
+          padding: 0;
+        }
+      }
+      @@media screen and (max-width: 400px) {
+        .topnav a{
+          float: none;
+          width: 100%;
+        }
+      }
+      #anim{
+        animation-name: anim;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes anim {
+        0% {color: black;}
+        25% {color: white;}
+        50% {color: black;}
+        75% {color: white;}
+        100% {color: black;}
+      }
+    </style>
+     </head>
+    <body>
+      <div class="container">
+        <div class="header">
+          <h1>PMHA Official Website</h1>
+          <p>Yeah, that's right. Come on in if you got some issues.</p>
+        </div>
+        <div class="topnav">
+          <a href="#">Home</a>
+          <a href="#">News</a>
+          <a href="#">Blogs</a>
+          <a href="#">Placebos</a>
+          <a href="#" style="float:right">Account</a>
+        </div>
+      </div>
+        <div class="row">
+          <div class="leftcolumn">
+              <div class="card">
+                  <h2>PMHA cover photo update!</h2>
+                  <h5>Nueva Ecija, March 29, 2020</h5>
+                  <div class="fakeimg" style="height: img.height;"><img src="AHAA.png" style="width:100%; border-radius:25px;"></img></div>
+                  <p>It's a picture of Charm Matulac in the sky, among other things.</p>
+                  <p>Artwork by renowned PMHA patient, Bono L. Reyes.</p>
+              </div>
+              <div class="card">
+                  <h2>We have officially founded our website!</h2>
+                  <h5>Nueva Ecija, March 29, 2020</h5>
+                  <div class="fakeimg" style="height: img.height";>
+                    <img src="MJCWebdev.jpg" style="width:100%; border-radius:25px;">
+                      <marquee behavior="alternate" scrollamount="30"><h1 id="anim">Employee of the month!</h1></marquee>
+                    </img>
+                  </div>
+                  <p>Yehey!!!</p>
+                  <p>Thanks to our IT staff and web development specialist, Bono L. Reyes.</p>
+              </div>
+            </div>
+          <div class="rightcolumn">
+            <div class="card">
+              <h2>About Us</h2>
+              <div class="fakeimg" style="height:img.height"><img src="congrats.jpg" style="width:100%; border-radius:25px;"></img></div>
+              <p>We care about those who couldn't care less about themselves, as that would benefit us financially.</p>
+            </div>
+            <div class="card">
+              <h2>PMHA's Art Archive</h2>
+              <div class="fakeimg" style="height:img.height; margin-bottom:5px;"><img src="art1.png" style="width:100%; border-radius:25px;"></img></div>
+              <div class="fakeimg" style="height:img.height; margin-bottom:5px;"><img src="art2.png" style="width:100%; border-radius:25px;"></img></div>
+              <div class="fakeimg" style="height:img.height; margin-bottom:5px;"><img src="art3.png" style="width:100%; border-radius:25px;"></img></div>
+            </div>
+            <div class="card">
+              <h2>Follow Us</h2>
+              <p>(pages coming soon!)</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <h2>©PMHA - All Rights Reserved.</h2>
+        </div>
+    </body>
+</html>
